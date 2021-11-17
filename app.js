@@ -209,4 +209,3 @@ prev.addEventListener("click", (event) => {
 // https://api.rawg.io/api/games/3498?key=890ddaf7eee84e68a69a5bd9b1fed21b
 // https://api.rawg.io/api/games?key=890ddaf7eee84e68a69a5bd9b1fed21b&search=wither
 // https://api.rawg.io/api/games?key=890ddaf7eee84e68a69a5bd9b1fed21b&page=2&search=witcher
-
