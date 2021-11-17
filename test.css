@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right, #000000, #404040);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100hv;
+}
+
+.game {
+    width: 400px;
+    margin: 4px;
+    border-radius: 5px;
+}
+.game img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.card {
+    
+    border: 1px solid #ccc;
+    transition: box-shadow .3s;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 228, 0.9);
+}
+.game-info span{
+    background-color: rgb(0, 0, 0);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    justify-content: right;
+}
+.game-title {
+    display: inline;
+}
+.game-info span {
+    left: 0;
+    right: 0;
+    
+    float: right;
+    
+}
+
+.game-info span.green{
+    color:rgb(123, 255, 123);
+}
+
+.game-info span.orange{
+    color:orange;
+}
+
+.game-info span.red{
+    color:red;
+}
+
+.header{
+    color: #bdc3c7;
+}
+
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+.input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #17191a;
+    padding-right: 40px;
+    color:#fff;
+}
+.input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+.btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+.input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+.pagination {
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+.page {
+    padding: 30px;
+    cursor: pointer;
+}
+.page.disabled {
+    display: none;
+}
+
+.current {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.current.disabled {
+    display: none;
+}
+.next.disabled{
+    display: none;
+}
