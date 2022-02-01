@@ -62,7 +62,7 @@ function getGames(url) {
         } else if (data.previous == null) {
             prev.classList.add("disabled");
         }
-         else {
+        else {
             next.classList.remove("disabled");
             prev.classList.remove("disabled");
         }
@@ -119,36 +119,36 @@ function getGames(url) {
             <div class="card">
             <div class="modal fade" id="modal${+ uQode}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">${info.name}</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">${info.name}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  Overview: <br>
-                  ${info.description_raw}
-                  <br>
-                  Release-date: ${info.released}
+                Overview: <br>
+                ${info.description_raw}
+                <br>
+                Release-date: ${info.released}
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
                 </div>
-              </div>
             </div>
-          </div>
-                 <img class="card-img"
-                     src="${info.background_image}"
-                     alt="${info.name}"
-                     data-bs-toggle="modal" data-bs-target="#modal${+ uQode++}">
+            </div>
+        </div>
+                <img class="card-img"
+                    src="${info.background_image}"
+                    alt="${info.name}"
+                    data-bs-toggle="modal" data-bs-target="#modal${+ uQode++}">
             
-                 <div class="card-body">
-                     <div class="game-info">
-                         <h3 class="game-title">${info.name}</h3>
-                         <span class="${getColor(info.rating)}">${info.rating}</span>                                                  
-                     </div>
-                 </div>
-             </div>
-         </div>`
+                <div class="card-body">
+                    <div class="game-info">
+                        <h3 class="game-title">${info.name}</h3>
+                        <span class="${getColor(info.rating)}">${info.rating}</span>                                                  
+                    </div>
+                </div>
+            </div>
+        </div>`
                 row.appendChild(colEl);
             });
         }
